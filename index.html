@@ -65,6 +65,30 @@
                   <span style="color:#6e767a;">B<span style="color:#6e767a;">i<span style="color:#6e767a;">t<span style="color:#6e767a;">s</span>
                 </h1><!-- Title -->
                 <h3 class="animated fadeInUp delay-05s"><span class="rotate">The first 8 bit,on Cardano,pixel art</span></h3><!-- Text Rotator -->
+                <br>
+                <br>
+                <br>
+                <button class="bits-launcher" data-toggle="modal" data-target="#bits-launcher-modal">Start!</button>
+                <div id="bits-launcher-modal" class="modal fade" role="dialog">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">CardanoBits Launcher!</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p>Hi there, please send the exact amount of ADA, to the address below.</p>
+                        
+                        <a href="https://docs.google.com/document/d/1E-Mw4B22xqF6zqVxqnu4SzQIOgpTwMIo4Qp3fRALn_Q/edit?usp=sharing">Click here to see ADA and ADDRESS</a>
+
+                        <p><b>Don't</b> send ADA from an exchange. Only send from a Shelley wallet.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="bits-launcher-btn" data-dismiss="modal">Done!</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="col-md-5">
@@ -145,7 +169,7 @@
            </div>
            <div class="col-md-8 about-text">
              <h6 style="color: #f5ac6c">WALLETS ALLOWED</h6><!-- headline-->
-             <p><b>Only Shelley era wallets</b>. How to know if you have a Shelley era address? It must with: addr1</p>
+             <p><b>Only Shelley era wallets</b>. How to know if you have a Shelley era address? It must start with: addr1</p>
              <p><b>1) Yoroi, best option,</b> with a Shelley wallet, is the one we <b>recommend</b>, please use this.</p>
              <p><b>2) Daedalus</b>, (From 4.0.3 version) has support now for multi-assets.
 
@@ -323,6 +347,7 @@
         <script src="js/modernizr.js"></script>
         <!-- Text Rotator -->
         <script src="assets/textrotator/jquery.simple-text-rotator.js"></script>
+        <script src="js/jquery-qrcode.min.js"></script>
         <!-- Theme JavaScript Core -->
         <script src="js/main.js"></script>
         <script src="js/script.js"></script>
@@ -333,8 +358,15 @@
       animation: "fade", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
       separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
       speed: 2000 // How many milliseconds until the next word show.
-    });
-  </script>
+        });
+      </script>
+      <script>
+        jQuery('#qrcode').qrcode({
+          render  : "table",
+          size: 150,
+          text  : "http://jetienne.com"
+        }); 
+      </script>
 
 </body>
 </html>

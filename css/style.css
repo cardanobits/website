@@ -95,7 +95,7 @@ html,html a {
 	text-shadow:1px 1px 1px rgba(0,0,0,0.004);
 }
 html,button,input,select,textarea {
-	font-family:'Varela Round',sans-serif;
+	font-family:'Press Start 2P',cursive;
 }
 body {
 	margin:0;
@@ -468,7 +468,7 @@ table {
 	/* display:inline-block; */
 }
 .hero h3 {
-	font-size: 20px;
+	font-size: 15px;
 	margin:0;
 	padding:0;
 	opacity:0.5;
@@ -482,55 +482,97 @@ table {
 	color:#fff;
 	font-size: 15px;
 }
-/* Boucing Arrow Animation */
-@keyframes arrowbounce {
-	from {
-		-webkit-transform:translateY(0);
-		-moz-transform:translateY(0);
-		transform:translateY(0);
-	}
-	to {
-		-webkit-transform:translateY(-20px);
-		-moz-transform:translateY(-20px);
-		transform:translateY(-20px);
-	}
+.bits-launcher {
+	position:relative;
+	width:330px;
+	height:125px;
+	margin:0 auto;
+	text-align:center;
+	font-size:46px;
+	color:#fff;
+	margin-bottom:40px;
+	-webkit-transition:all .3s ease-out;
+	transition:all .3s ease-out;
+	border: 20px solid black;
+	color: #92171f;
+	box-shadow: 20px 20px 5px #d4dce0;
 }
-@-moz-keyframes arrowbounce {
-	/* Firefox */ from {
-		-webkit-transform:translateY(0);
-		-moz-transform:translateY(0);
-		transform:translateY(0);
-	}
-	to {
-		-webkit-transform:translateY(-20px);
-		-moz-transform:translateY(-20px);
-		transform:translateY(-20px);
-	}
+.bits-launcher:hover{
+	position:relative;
+	width:330px;
+	height:125px;
+	margin:0 auto;
+	text-align:center;
+	font-size:50px;
+	box-shadow: 10px;
+	margin-bottom:40px;
+	-webkit-transition:all .3s ease-out;
+	transition:all .3s ease-out;
+	border: 20px solid black;
+	color: #D0222C;
 }
-@-webkit-keyframes arrowbounce {
-	/* Safari and Chrome */ from {
-		-webkit-transform:translateY(0);
-		-moz-transform:translateY(0);
-		transform:translateY(0);
-	}
-	to {
-		-webkit-transform:translateY(-20px);
-		-moz-transform:translateY(-20px);
-		transform:translateY(-20px);
-	}
+.bits-launcher-btn{
+	width:100px;
+	height:30px;
+	text-align:center;
+	font-size:10px;
+	-webkit-transition:all .3s ease-out;
+	transition:all .3s ease-out;
+	border: 5px solid black;
+	color: #D0222C;
 }
-@-o-keyframes arrowbounce {
-	/* Opera */ from {
-		-webkit-transform:translateY(0);
-		-moz-transform:translateY(0);
-		transform:translateY(0);
-	}
-	to {
-		-webkit-transform:translateY(-20px);
-		-moz-transform:translateY(-20px);
-		transform:translateY(-20px);
-	}
+.bits-launcher-btn:hover{
+	background: black
 }
+.cbits-qr-code{
+
+}
+
+.modal-content {
+	position:absolute;
+	text-align:center;
+	box-shadow: 10px;
+	margin-bottom:40px;
+	-webkit-transition:all .3s ease-out;
+	transition:all .3s ease-out;
+	border: 20px solid black;
+	border-radius: 0px;
+}
+.modal-body p{
+	color: #3d3d3d;
+	font-size: 10px;
+}
+.modal-body label{
+	color: #3d3d3d;
+	font-size: 14px;
+}
+.modal-body input{
+	color: #3d3d3d;
+	font-size: 14px;
+}
+.modal-header h4{
+	font-size: 20px;
+	color: #3d3d3d;
+}
+
+
+.services .icon {
+	position:relative;
+	width:175px;
+	height:175px;
+	margin:0 auto;
+	text-align:center;
+	line-height:180px;
+	font-size:56px;
+	color:#fff;
+	box-shadow:0 0 0 0 rgba(0,0,0,0.0);
+	margin-bottom:40px;
+	-webkit-transition:all .3s ease-out;
+	transition:all .3s ease-out;
+	border: 20px solid black;
+	color: #D0222C;
+}
+
 .scrollto {
 	padding: 150px 0px 0px 0px;
 	display:block;

@@ -43,4 +43,26 @@ Menu
 
 })();
 
+/**************************
+Copy to clipboard
+***************************/
+function copyAdaToClipboard() {
+  var copyText = document.getElementById("cbits-ada");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  
+  var tooltip = document.getElementById("myTooltip");
+  alert("ADA exact ammount copied: " + copyText.value);
 
+}
+
+function copyAddrToClipboard() {
+  var copyText = document.getElementById("cbits-address");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  
+  var tooltip = document.getElementById("myTooltip");
+  alert("Address copied: " + copyText.value);
+}
